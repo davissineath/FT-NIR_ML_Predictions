@@ -6,7 +6,7 @@ from sklearn.manifold import TSNE
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from tqdm import tqdmx
+from tqdm import tqdm
 
 def plot_TSNE(X_features, y_label, ax, n_components=2, verbose=1, random_state=123):
     tsne = TSNE(n_components=n_components, verbose=verbose, random_state=random_state)
